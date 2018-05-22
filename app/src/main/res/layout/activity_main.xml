@@ -11,6 +11,35 @@
         android:id="@+id/button_simple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="简单实例" />
+        android:text="简单实例"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_simple_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data标签子标签import简单使用"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_simple_include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="data binding 配合include使用"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_no_find_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去除findViewById"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_data_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据刷新"
+        android:textAllCaps="false" />
 
 </LinearLayout>

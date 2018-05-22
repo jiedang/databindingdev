@@ -16,7 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".simple.SimpleBindingActivity" />
+        <activity
+            android:name=".simple.SimpleBindingActivity"
+            android:label="简单实例" />
+        <activity
+            android:name=".simple.DataImportBindingActivity"
+            android:label="data标签子标签import简单使用" />
+        <activity
+            android:name=".simple.IncludeBindingActivity"
+            android:label="data binding 配合include使用" />
+        <activity
+            android:name=".simple.NoFindViewByIdActivity"
+            android:label="去除findViewById" />
+        <activity android:name=".simple.DataRefreshActivity"
+            android:label="数据刷新"/>
     </application>
 
 </manifest>

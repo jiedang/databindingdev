@@ -8,24 +8,26 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.R;
+import com.tuacy.databindingdev.databinding.ActivityIncludeBindingBinding;
 
-public class SimpleBindingActivity extends AppCompatActivity {
+public class IncludeBindingActivity extends AppCompatActivity {
 
 	public static void startUp(Context context) {
-		context.startActivity(new Intent(context, SimpleBindingActivity.class));
+		context.startActivity(new Intent(context, IncludeBindingActivity.class));
 	}
 
-	private SimpleBinding mBinding;
+	private ActivityIncludeBindingBinding mBinding;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mBinding = DataBindingUtil.setContentView(this, R.layout.activity_simple_binding);
+		mBinding = DataBindingUtil.setContentView(this, R.layout.activity_include_binding);
 		initData();
 	}
 
 	private void initData() {
-		mBinding.setUser(new User("Test", "User"));
+		User user = new User("Test", "User");
+		mBinding.setUser(user);
 	}
 
 }
