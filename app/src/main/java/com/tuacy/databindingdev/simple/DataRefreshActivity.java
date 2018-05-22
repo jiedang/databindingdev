@@ -6,6 +6,8 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+
 import com.tuacy.databindingdev.databinding.DataRefreshBinding;
 
 import com.tuacy.databindingdev.R;
@@ -17,6 +19,7 @@ public class DataRefreshActivity extends AppCompatActivity {
 	}
 
 	private DataRefreshBinding mBinding;
+	private UserObservable     mUser;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -26,7 +29,15 @@ public class DataRefreshActivity extends AppCompatActivity {
 	}
 
 	private void initData() {
-		mBinding.setUser(new UserObservable("Test"));
+		mBinding.setChangeEvent(new ChangeClickEvent());
+		mBinding.setUser(mUser = new UserObservable("Test"));
+	}
+
+	public class ChangeClickEvent {
+
+		public void changeOnClick(View view) {
+			mUser.setUserName("change");
+		}
 	}
 
 }
