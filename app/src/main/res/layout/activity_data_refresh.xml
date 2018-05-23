@@ -3,6 +3,8 @@
 
     <data class="DataRefreshBinding">
 
+        <import type="android.databinding.ObservableMap" />
+
         <variable
             name="user"
             type="com.tuacy.databindingdev.simple.UserObservable" />
@@ -14,12 +16,23 @@
         <variable
             name="changeEvent"
             type="com.tuacy.databindingdev.simple.DataRefreshActivity.ChangeClickEvent" />
+
+        <variable
+            name="userCollections"
+            type="ObservableMap&lt;String, Object&gt;" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="通过Observable Objects(观察对象)实现数据刷新：" />
 
         <TextView
             android:layout_width="match_parent"
@@ -30,11 +43,33 @@
             android:textSize="18sp" />
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="通过Observable Fields(观察字段)实现数据刷新：" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:text="@{userField.userName}"
+            android:text="@{userField.userName + userField.age}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="通过Observable Collections(观察集合)实现数据刷新：" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text='@{"姓名:" + userCollections.name + "年龄:" + userCollections.age}'
             android:textSize="18sp" />
 
         <Button
@@ -42,6 +77,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:onClick="@{changeEvent.changeOnClick}"
-            android:text="通知数据改变" />
+            android:text="数据刷新" />
     </LinearLayout>
 </layout>

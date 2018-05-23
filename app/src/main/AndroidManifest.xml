@@ -28,8 +28,15 @@
         <activity
             android:name=".simple.NoFindViewByIdActivity"
             android:label="去除findViewById" />
-        <activity android:name=".simple.DataRefreshActivity"
-            android:label="数据刷新"/>
+        <activity
+            android:name=".simple.DataRefreshActivity"
+            android:label="数据刷新" />
+        <activity
+            android:name=".simple.TwoWayBindingActivity"
+            android:label="双向绑定" />
+        <activity
+            android:name=".simple.CustomerTwoWayBindingActivity"
+            android:label="自定义View双向绑定" />
     </application>
 
 </manifest>

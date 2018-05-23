@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.tuacy.databindingdev.simple.CustomerTwoWayBindingActivity;
 import com.tuacy.databindingdev.simple.DataImportBindingActivity;
 import com.tuacy.databindingdev.simple.DataRefreshActivity;
 import com.tuacy.databindingdev.simple.IncludeBindingActivity;
 import com.tuacy.databindingdev.simple.NoFindViewByIdActivity;
 import com.tuacy.databindingdev.simple.SimpleBindingActivity;
+import com.tuacy.databindingdev.simple.TwoWayBindingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +54,20 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				DataRefreshActivity.startUp(mContext);
+			}
+		});
+
+		findViewById(R.id.button_two_way_binding).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				TwoWayBindingActivity.startUp(mContext);
+			}
+		});
+
+		findViewById(R.id.button_customer_two_way_binding).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				CustomerTwoWayBindingActivity.startUp(mContext);
 			}
 		});
 	}

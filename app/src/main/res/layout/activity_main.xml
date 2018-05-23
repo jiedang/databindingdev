@@ -25,7 +25,7 @@
         android:id="@+id/button_simple_include"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="data binding 配合include使用"
+        android:text="data binding + include"
         android:textAllCaps="false" />
 
     <Button
@@ -40,6 +40,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="数据刷新"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_two_way_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="双向绑定"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_customer_two_way_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义View双向绑定"
         android:textAllCaps="false" />
 
 </LinearLayout>
