@@ -1,4 +1,4 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.twowaybinding;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.databinding.CustomerTwoWayBinding;
+import com.tuacy.databindingdev.entity.UserObservable;
 
 public class CustomerTwoWayBindingActivity extends AppCompatActivity {
 

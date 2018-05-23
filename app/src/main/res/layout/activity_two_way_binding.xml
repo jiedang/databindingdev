@@ -5,7 +5,7 @@
 
         <variable
             name="user"
-            type="com.tuacy.databindingdev.simple.UserObservable"/>
+            type="com.tuacy.databindingdev.entity.UserObservable"/>
 
     </data>
 

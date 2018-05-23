@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tuacy.databindingdev">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,11 +34,17 @@
             android:name=".simple.DataRefreshActivity"
             android:label="数据刷新" />
         <activity
-            android:name=".simple.TwoWayBindingActivity"
+            android:name=".twowaybinding.TwoWayBindingActivity"
             android:label="双向绑定" />
         <activity
-            android:name=".simple.CustomerTwoWayBindingActivity"
+            android:name=".twowaybinding.CustomerTwoWayBindingActivity"
             android:label="自定义View双向绑定" />
+        <activity
+            android:name=".eventbinding.EventBindingActivity"
+            android:label="事件绑定" />
+        <activity
+            android:name=".recycler.RecyclerBindingActivity"
+            android:label="data binding + recycler" />
     </application>
 
 </manifest>

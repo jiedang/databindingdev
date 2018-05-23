@@ -1,4 +1,4 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.twowaybinding;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,7 +18,15 @@ import android.view.View;
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.utils.DensityUtils;
 
-@InverseBindingMethods({@InverseBindingMethod(type = com.tuacy.databindingdev.simple.CustomerBindingView.class, attribute = "value", event = "valueAttrChanged", method = "getValue")})
+@InverseBindingMethods(
+	{
+		@InverseBindingMethod(
+			type = CustomerBindingView.class,
+			attribute = "value",
+			event = "valueAttrChanged",
+			method = "getValue"
+		)
+	})
 public class CustomerBindingView extends View {
 
 	private Context   mContext;

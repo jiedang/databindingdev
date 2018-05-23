@@ -7,11 +7,11 @@
 
         <variable
             name="user"
-            type="com.tuacy.databindingdev.simple.UserObservable" />
+            type="com.tuacy.databindingdev.entity.UserObservable" />
 
         <variable
             name="userField"
-            type="com.tuacy.databindingdev.simple.UserField" />
+            type="com.tuacy.databindingdev.entity.UserField" />
 
         <variable
             name="changeEvent"

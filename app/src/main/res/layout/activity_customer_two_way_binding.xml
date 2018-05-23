@@ -6,7 +6,7 @@
 
         <variable
             name="user"
-            type="com.tuacy.databindingdev.simple.UserObservable" />
+            type="com.tuacy.databindingdev.entity.UserObservable" />
     </data>
 
     <LinearLayout
@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.tuacy.databindingdev.simple.CustomerBindingView
+        <com.tuacy.databindingdev.twowaybinding.CustomerBindingView
             android:id="@+id/customer_view"
             android:layout_width="match_parent"
             android:layout_height="64dp"
@@ -31,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="改变数据"/>
+
 
     </LinearLayout>
 </layout>

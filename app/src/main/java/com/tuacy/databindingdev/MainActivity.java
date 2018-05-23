@@ -5,13 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.tuacy.databindingdev.simple.CustomerTwoWayBindingActivity;
+import com.tuacy.databindingdev.recycler.RecyclerBindingActivity;
+import com.tuacy.databindingdev.twowaybinding.CustomerTwoWayBindingActivity;
 import com.tuacy.databindingdev.simple.DataImportBindingActivity;
 import com.tuacy.databindingdev.simple.DataRefreshActivity;
+import com.tuacy.databindingdev.eventbinding.EventBindingActivity;
 import com.tuacy.databindingdev.simple.IncludeBindingActivity;
 import com.tuacy.databindingdev.simple.NoFindViewByIdActivity;
 import com.tuacy.databindingdev.simple.SimpleBindingActivity;
-import com.tuacy.databindingdev.simple.TwoWayBindingActivity;
+import com.tuacy.databindingdev.twowaybinding.TwoWayBindingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -68,6 +70,20 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				CustomerTwoWayBindingActivity.startUp(mContext);
+			}
+		});
+
+		findViewById(R.id.button_event_binding).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				EventBindingActivity.startUp(mContext);
+			}
+		});
+
+		findViewById(R.id.button_recycler_binding).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				RecyclerBindingActivity.startUp(mContext);
 			}
 		});
 	}

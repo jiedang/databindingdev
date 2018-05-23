@@ -14,6 +14,8 @@ import android.view.View;
 import com.tuacy.databindingdev.databinding.DataRefreshBinding;
 
 import com.tuacy.databindingdev.R;
+import com.tuacy.databindingdev.entity.UserField;
+import com.tuacy.databindingdev.entity.UserObservable;
 
 public class DataRefreshActivity extends AppCompatActivity {
 

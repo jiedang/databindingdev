@@ -56,4 +56,18 @@
         android:text="自定义View双向绑定"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/button_event_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="事件绑定"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_recycler_binding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Binding + RecyclerView"
+        android:textAllCaps="false" />
+
 </LinearLayout>

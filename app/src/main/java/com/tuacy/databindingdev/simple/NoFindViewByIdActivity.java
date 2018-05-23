@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.databinding.NoFindViewByIdBinding;
+import com.tuacy.databindingdev.entity.User;
 
 public class NoFindViewByIdActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.entity;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;

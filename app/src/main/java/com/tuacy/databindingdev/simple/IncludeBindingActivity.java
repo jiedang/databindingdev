@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.databinding.ActivityIncludeBindingBinding;
+import com.tuacy.databindingdev.entity.User;
 
 public class IncludeBindingActivity extends AppCompatActivity {
 

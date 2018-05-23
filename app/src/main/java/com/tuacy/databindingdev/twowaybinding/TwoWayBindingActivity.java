@@ -1,22 +1,17 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.twowaybinding;
 
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.databinding.Observable;
-import android.databinding.ObservableArrayMap;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.View;
 
 import com.tuacy.databindingdev.BR;
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.DataRefreshBinding;
 import com.tuacy.databindingdev.databinding.TwoWayBinding;
+import com.tuacy.databindingdev.entity.UserObservable;
 
 public class TwoWayBindingActivity extends AppCompatActivity {
 

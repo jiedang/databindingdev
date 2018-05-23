@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.R;
+import com.tuacy.databindingdev.entity.User;
 
 public class SimpleBindingActivity extends AppCompatActivity {
 
