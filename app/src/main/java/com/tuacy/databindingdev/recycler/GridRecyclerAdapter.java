@@ -46,7 +46,7 @@ public class GridRecyclerAdapter extends RecyclerView.Adapter<GridRecyclerAdapte
 		}
 
 		public ItemHolder setBinding(String item) {
-			mBinding.setViewModel(new ImageViewModel(item));
+			mBinding.setViewModel(item);
 			return this;
 		}
 	}

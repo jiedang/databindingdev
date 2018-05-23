@@ -5,8 +5,6 @@ import android.content.res.TypedArray;
 import android.databinding.BindingAdapter;
 import android.databinding.InverseBindingAdapter;
 import android.databinding.InverseBindingListener;
-import android.databinding.InverseBindingMethod;
-import android.databinding.InverseBindingMethods;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -18,15 +16,6 @@ import android.view.View;
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.utils.DensityUtils;
 
-@InverseBindingMethods(
-	{
-		@InverseBindingMethod(
-			type = CustomerBindingView.class,
-			attribute = "value",
-			event = "valueAttrChanged",
-			method = "getValue"
-		)
-	})
 public class CustomerBindingView extends View {
 
 	private Context   mContext;

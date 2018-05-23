@@ -5,21 +5,7 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
-public class ImageViewModel {
-
-	private String imageUrl;
-
-	public ImageViewModel(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
-
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
-
-	public String getImageUrl() {
-		return imageUrl;
-	}
+public class BindingAdapterModel {
 
 	@BindingAdapter({"app:imageUrl"})
 	public static void loadImage(ImageView view, String imageUrl) {
