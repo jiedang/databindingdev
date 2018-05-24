@@ -1,4 +1,4 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.refresg;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,11 +11,10 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.tuacy.databindingdev.databinding.DataRefreshBinding;
-
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.entity.UserField;
 import com.tuacy.databindingdev.entity.UserObservable;
+import com.tuacy.databindingdev.databinding.DataRefreshBinding;
 
 public class DataRefreshActivity extends AppCompatActivity {
 

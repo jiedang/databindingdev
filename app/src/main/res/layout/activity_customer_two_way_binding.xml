@@ -14,7 +14,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.tuacy.databindingdev.twowaybinding.CustomerBindingView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="自定义View实现双向绑定" />
+
+        <com.tuacy.databindingdev.twowaybinding.CustomerTwoWayBindingView
             android:id="@+id/customer_view"
             android:layout_width="match_parent"
             android:layout_height="64dp"
@@ -30,8 +36,7 @@
             android:id="@+id/button_change"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="改变数据"/>
-
+            android:text="通过自定义View的setter方法改变数据" />
 
     </LinearLayout>
 </layout>

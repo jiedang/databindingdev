@@ -1,4 +1,4 @@
-package com.tuacy.databindingdev.simple;
+package com.tuacy.databindingdev.include;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,8 +8,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.ActivityIncludeBindingBinding;
 import com.tuacy.databindingdev.entity.User;
+import com.tuacy.databindingdev.databinding.ActivityIncludeBindingBinding;
 
 public class IncludeBindingActivity extends AppCompatActivity {
 

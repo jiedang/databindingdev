@@ -14,6 +14,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="双向绑定，EditText输入的内容在TextView里面也会实时展示出来"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

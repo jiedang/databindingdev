@@ -4,12 +4,15 @@
     <data class="com.tuacy.databindingdev.simple.DataImportBinding">
 
         <import type="android.view.View" />
-        <import type="com.tuacy.databindingdev.simple.DataImportEntity" />
+
+        <import type="com.tuacy.databindingdev.entity.DataImportEntity" />
+
         <import type="java.util.List" />
 
         <variable
             name="importEntity"
-            type="com.tuacy.databindingdev.simple.DataImportEntity" />
+            type="com.tuacy.databindingdev.entity.DataImportEntity" />
+
         <variable
             name="importList"
             type="List&lt;DataImportEntity>" />
@@ -19,6 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="data字标签import的简单使用" />
 
         <TextView
             android:layout_width="match_parent"

@@ -15,7 +15,7 @@
 
         <variable
             name="changeEvent"
-            type="com.tuacy.databindingdev.simple.DataRefreshActivity.ChangeClickEvent" />
+            type="com.tuacy.databindingdev.refresg.DataRefreshActivity.ChangeClickEvent" />
 
         <variable
             name="userCollections"

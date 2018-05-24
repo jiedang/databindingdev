@@ -11,7 +11,7 @@
         android:id="@+id/button_simple"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="简单实例"
+        android:text="入门例子"
         android:textAllCaps="false" />
 
     <Button
@@ -61,6 +61,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="事件绑定"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_data_binding_adapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Binding Adapter"
         android:textAllCaps="false" />
 
     <Button

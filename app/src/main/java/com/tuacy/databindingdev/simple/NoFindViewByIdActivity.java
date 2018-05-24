@@ -9,8 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.NoFindViewByIdBinding;
 import com.tuacy.databindingdev.entity.User;
+import com.tuacy.databindingdev.databinding.NoFindViewByIdBinding;
 
 public class NoFindViewByIdActivity extends AppCompatActivity {
 
@@ -30,6 +30,10 @@ public class NoFindViewByIdActivity extends AppCompatActivity {
 	private void initData() {
 		mBinding.setUser(new User("Test", "User"));
 
+		/**
+		 * 通过mBinding就直接拿到了Button对象(布局文件里面已经写了id，android:id="@+id/button_name" 所以对象的名字是buttonName)，
+		 * 不需要findViewById()了
+		 */
 		mBinding.buttonName.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

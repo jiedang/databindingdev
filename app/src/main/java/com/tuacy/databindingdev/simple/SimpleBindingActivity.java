@@ -26,7 +26,7 @@ public class SimpleBindingActivity extends AppCompatActivity {
 	}
 
 	private void initData() {
-		mBinding.setUser(new User("Test", "User"));
+		mBinding.setUser(new User("展示用户名", "展示用户密码"));
 	}
 
 }

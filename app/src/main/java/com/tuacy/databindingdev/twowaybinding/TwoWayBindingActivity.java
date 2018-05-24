@@ -10,8 +10,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.BR;
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.TwoWayBinding;
 import com.tuacy.databindingdev.entity.UserObservable;
+import com.tuacy.databindingdev.databinding.TwoWayBinding;
 
 public class TwoWayBindingActivity extends AppCompatActivity {
 
@@ -19,8 +19,7 @@ public class TwoWayBindingActivity extends AppCompatActivity {
 		context.startActivity(new Intent(context, TwoWayBindingActivity.class));
 	}
 
-	private TwoWayBinding  mBinding;
-	private UserObservable mUser;
+	private TwoWayBinding mBinding;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,8 +29,8 @@ public class TwoWayBindingActivity extends AppCompatActivity {
 	}
 
 	private void initData() {
-		mBinding.setUser(mUser = new UserObservable("tuacy"));
-		mUser.addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {
+		mBinding.setUser(new UserObservable("tuacy"));
+		mBinding.getUser().addOnPropertyChangedCallback(new Observable.OnPropertyChangedCallback() {
 			@Override
 			public void onPropertyChanged(Observable sender, int propertyId) {
 				switch (propertyId) {

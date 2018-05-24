@@ -9,8 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.EventBinding;
 import com.tuacy.databindingdev.entity.User;
+import com.tuacy.databindingdev.databinding.EventBinding;
 
 public class EventBindingActivity extends AppCompatActivity {
 

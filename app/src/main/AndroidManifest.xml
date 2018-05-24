@@ -20,18 +20,18 @@
         </activity>
         <activity
             android:name=".simple.SimpleBindingActivity"
-            android:label="简单实例" />
+            android:label="入门例子" />
         <activity
             android:name=".simple.DataImportBindingActivity"
             android:label="data标签子标签import简单使用" />
         <activity
-            android:name=".simple.IncludeBindingActivity"
+            android:name=".include.IncludeBindingActivity"
             android:label="data binding 配合include使用" />
         <activity
             android:name=".simple.NoFindViewByIdActivity"
             android:label="去除findViewById" />
         <activity
-            android:name=".simple.DataRefreshActivity"
+            android:name=".refresg.DataRefreshActivity"
             android:label="数据刷新" />
         <activity
             android:name=".twowaybinding.TwoWayBindingActivity"
@@ -45,6 +45,9 @@
         <activity
             android:name=".recycler.RecyclerBindingActivity"
             android:label="data binding + recycler" />
+        <activity
+            android:name=".adapter.BindingAdapterActivity"
+            android:label="Binding adapter" />
     </application>
 
 </manifest>

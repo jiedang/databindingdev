@@ -9,8 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.tuacy.databindingdev.R;
-import com.tuacy.databindingdev.databinding.CustomerTwoWayBinding;
 import com.tuacy.databindingdev.entity.UserObservable;
+import com.tuacy.databindingdev.databinding.CustomerTwoWayBinding;
 
 public class CustomerTwoWayBindingActivity extends AppCompatActivity {
 
@@ -19,7 +19,6 @@ public class CustomerTwoWayBindingActivity extends AppCompatActivity {
 	}
 
 	private CustomerTwoWayBinding mBinding;
-	private UserObservable        mUser;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,11 +28,12 @@ public class CustomerTwoWayBindingActivity extends AppCompatActivity {
 	}
 
 	private void initData() {
-		mBinding.setUser(mUser = new UserObservable("tuacyAAAA"));
+		mBinding.setUser(new UserObservable("tuacyAAAA"));
 
 		mBinding.buttonChange.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				//通过调用View的set方法来改变属性值，这样对应的绑定实体类也会改变
 				mBinding.customerView.setValue("改变数据");
 			}
 		});

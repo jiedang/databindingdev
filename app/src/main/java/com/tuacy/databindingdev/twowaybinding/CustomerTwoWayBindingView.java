@@ -16,21 +16,21 @@ import android.view.View;
 import com.tuacy.databindingdev.R;
 import com.tuacy.databindingdev.utils.DensityUtils;
 
-public class CustomerBindingView extends View {
+public class CustomerTwoWayBindingView extends View {
 
 	private Context   mContext;
 	private TextPaint mPaint;
 	private String    value;
 
-	public CustomerBindingView(Context context) {
+	public CustomerTwoWayBindingView(Context context) {
 		this(context, null);
 	}
 
-	public CustomerBindingView(Context context, AttributeSet attrs) {
+	public CustomerTwoWayBindingView(Context context, AttributeSet attrs) {
 		this(context, attrs, 0);
 	}
 
-	public CustomerBindingView(Context context, AttributeSet attrs, int defStyleAttr) {
+	public CustomerTwoWayBindingView(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		mContext = context;
 		initAttribute(attrs, defStyleAttr);
@@ -38,8 +38,8 @@ public class CustomerBindingView extends View {
 	}
 
 	private void initAttribute(AttributeSet attrs, int defStyleAttr) {
-		TypedArray typeArray = mContext.obtainStyledAttributes(attrs, R.styleable.CustomerBindingView, defStyleAttr, 0);
-		value = typeArray.getString(R.styleable.CustomerBindingView_value);
+		TypedArray typeArray = mContext.obtainStyledAttributes(attrs, R.styleable.CustomerTwoWayBindingView, defStyleAttr, 0);
+		value = typeArray.getString(R.styleable.CustomerTwoWayBindingView_value);
 		typeArray.recycle();
 	}
 
@@ -78,7 +78,7 @@ public class CustomerBindingView extends View {
 	}
 
 	@BindingAdapter(value = "value", requireAll = false)
-	public static void setValue(CustomerBindingView view, String value) {
+	public static void setValue(CustomerTwoWayBindingView view, String value) {
 		//避免无限循环,数据不相同的时候我们才去改变数据，因为是双向绑定吗，数据改变通知View刷新，View刷新又通知数据改变
 		if (TextUtils.isEmpty(view.getValue()) && TextUtils.isEmpty(value)) {
 			return;
@@ -89,15 +89,18 @@ public class CustomerBindingView extends View {
 		view.setValue(value);
 	}
 
+	/**
+	 * 关联某个数据变更
+	 */
 	@InverseBindingAdapter(attribute = "value", event = "valueAttrChanged")
-	public static String getValue(CustomerBindingView view) {
+	public static String getValue(CustomerTwoWayBindingView view) {
 		return view.getValue();
 	}
 
 	private static InverseBindingListener valueInverseBindingListener;
 
 	@BindingAdapter(value = {"valueAttrChanged"}, requireAll = false)
-	public static void setValueChangedListener(CustomerBindingView view, final InverseBindingListener bindingListener) {
+	public static void setValueChangedListener(CustomerTwoWayBindingView view, final InverseBindingListener bindingListener) {
 		valueInverseBindingListener = bindingListener;
 	}
 
