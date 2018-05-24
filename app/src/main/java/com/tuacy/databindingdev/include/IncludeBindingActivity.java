@@ -8,8 +8,8 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.tuacy.databindingdev.R;
+import com.tuacy.databindingdev.databinding.IncludeIncludeBinding;
 import com.tuacy.databindingdev.entity.User;
-import com.tuacy.databindingdev.databinding.ActivityIncludeBindingBinding;
 
 public class IncludeBindingActivity extends AppCompatActivity {
 
@@ -17,7 +17,7 @@ public class IncludeBindingActivity extends AppCompatActivity {
 		context.startActivity(new Intent(context, IncludeBindingActivity.class));
 	}
 
-	private ActivityIncludeBindingBinding mBinding;
+	private IncludeIncludeBinding mBinding;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
